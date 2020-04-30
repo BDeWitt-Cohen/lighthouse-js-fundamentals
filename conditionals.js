@@ -1,3 +1,4 @@
+const raining = true;
 const cold = false;
 
 if (cold) {
@@ -19,11 +20,13 @@ if (temperature < 0) {
 console.log("Now you're ready to go outside!");
 
 const isCitizen = true;
-const age = 26;
+const ageperson = 26;
 
-if (isCitizen && age > 18) {
+if (isCitizen && ageperson > 18) {
 	console.log("You are eligible to vote")
 }
+
+
 
 if (temperature < -40 || temperature > 40) {
   console.log("Maybe going outside isn't such a great idea…");
@@ -31,4 +34,14 @@ if (temperature < -40 || temperature > 40) {
 
 if (!raining) {
   console.log("Leave your umbrella at home!");
+}
+
+const age = 25
+
+if (age < 13){
+	console.log("Elementary School")
+} else if (age >= 13 || age <= 18) {
+	console.log("Secondary School")
+} else if (age > 18){
+	console.log("Lighthouse Labs")
 }
